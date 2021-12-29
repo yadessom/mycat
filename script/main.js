@@ -170,6 +170,34 @@ $(function(){
             $('.sec_09_right').removeClass('on');
             $('.sec_09_tit').removeClass('on');
         }
+
+
+
+
+        if(num > 10177 && num < 11177){
+            $('.sec_11').addClass('on');
+        }else if(num > 0 && num < 10176){
+            $('.sec_11').removeClass('on');
+        }
+        if(num > 11150 && num < 11998){
+            $('.sec_12').addClass('on');
+            
+        }else if(num > 0 && num < 11149){
+            $('.sec_12').removeClass('on');
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
 
     

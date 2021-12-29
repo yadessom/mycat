@@ -681,20 +681,28 @@ body{font-family: 'Open Sans', sans-serif;}
 /* ********************************************* */
 .sec_11{
     width: 100%;
-    background:#fff;
+    background:#e7e7e7;
+    position: relative;
 }
 .sec_11_inner{
     width: 1000px;
     height: 1000px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+}
+.sec_11_tit{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    z-index: 3;
 }
 .sec_11_tit h2{
     font-size: 32px;
     color: #444;
     font-weight: bold;
     letter-spacing: normal;
-    padding-top: 140px;
 }
 .sec_11_tit p{
     font-size: 16px;
@@ -702,10 +710,51 @@ body{font-family: 'Open Sans', sans-serif;}
     line-height: 24px;
     margin:10px 0 30px 0;
 }
+.sec_11_left{
+    position: absolute;
+    left: -30%;
+    top: 70%;
+    transform: translateY(-50%);
+}
+.sec_11_right{
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sec_11.on .sec_11_left{
+    animation: sec_11_left_ani 3s ease forwards ;
+}
+.sec_11.on .sec_11_right{
+    animation: sec_11_right_ani 3s ease forwards ;
+}
+@keyframes sec_11_left_ani{
+    0%{left: -30%;}
+    100%{left:20%}
+}
+@keyframes sec_11_right_ani{
+    0%{right: -30%;}
+    100%{right:20%}
+}
 /* ********************************************* */
 .sec_12{
     width: 100%;
-    background:#fcf5ec url("../images/con11_obj01.jpg") no-repeat center top;
+    background:#fcf5ec;
+}
+.sec_12_bg{
+    opacity: 0;
+    padding-right: 50px;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-50%);
+    top: 0;
+}
+.sec_12.on .sec_12_bg{
+    animation: sec_12_ani 3s ease forwards;
+}
+@keyframes sec_12_ani{
+    0%{opacity: 0;left:45%;}
+    100%{opacity: 1;left: 50%;}
 }
 .sec_12_inner{
     width: 1600px;
@@ -719,6 +768,7 @@ body{font-family: 'Open Sans', sans-serif;}
     bottom: 0;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 3;
 }
 .sec_12_tit h2{
     font-size: 14px;
@@ -732,4 +782,45 @@ body{font-family: 'Open Sans', sans-serif;}
     color: #888;
     letter-spacing: normal;
     margin-bottom: 25px;
+}
+/* ********************************************* */
+.sec_13{
+    width: 100%;
+    font-size: 0;
+}
+.sec_13_content{
+    width: 100%;
+}
+.sec_13_content ul{
+    width: 100%;
+    display: flex;
+}
+.sec_13_content li{
+    width: calc(100% / 4);
+}
+.sec_13_content li img{
+    width: 100%;
+}
+/* ********************************************* */
+.sec_14{
+    width: 100%;
+    padding: 80px 0 150px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: #444;
+}
+.sec_14 h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.sec_14 h3{
+    font-size: 15px;
+    margin: 45px 0 10px 0;
+}
+.sec_14 p{
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.footer_logo{
+    margin: 50px 0 20px 0;
 }
