@@ -689,8 +689,7 @@ body{font-family: 'Open Sans', sans-serif;}
     width: 100%;
     background:url("../images/con_10_bg.jpg");
     position: relative;
-    
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .sec_10_inner{
     width: 1000px;
@@ -752,27 +751,39 @@ body{font-family: 'Open Sans', sans-serif;}
     margin-top: 10px;
 }
 /* ********************************************* */
-.sec_11_display{
+.sec_10_display{
     display: none;
 }
 .sec_10_color{
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -100%;
     transform: translateX(-50%);
     z-index: 1;
 }
 .sec_10_case{
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -100%;
     transform: translateX(-50%);
+}
+/* ********************************************* */
+.sec_10_color.on{
+    animation: sec_10_ani 3s ease forwards;
+}
+.sec_10_case.on{
+    animation: sec_10_ani 3s ease forwards;
+}
+@keyframes sec_10_ani{
+    0%{bottom:-100%}
+    100%{bottom:0}
 }
 /* ********************************************* */
 .sec_11{
     width: 100%;
     background:#e7e7e7;
     position: relative;
+    overflow: hidden;
 }
 .sec_11_inner{
     width: 1000px;

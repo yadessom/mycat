@@ -170,10 +170,13 @@ $(function(){
             $('.sec_09_right').removeClass('on');
             $('.sec_09_tit').removeClass('on');
         }
-
-
-
-
+        if(num > 9125 && num < 10202){
+            $('.sec_10_color').addClass('on');
+            $('.sec_10_case').addClass('on');
+        }else if(num > 0 && num < 9124){
+            $('.sec_10_color').removeClass('on');
+            $('.sec_10_case').removeClass('on');
+        }
         if(num > 10177 && num < 11177){
             $('.sec_11').addClass('on');
         }else if(num > 0 && num < 10176){
@@ -208,6 +211,7 @@ $(function(){
             let num = $(this).index();
             $('.sec_10_color li').hide().eq(num+6).fadeIn(1500);
         });
+        // **************************************
 
 
 
