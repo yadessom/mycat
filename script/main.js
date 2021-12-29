@@ -187,7 +187,6 @@ $(function(){
         }
 
         // slick fade *****************************************
-        
         $('.sec_08_fade').slick({
             dots: false,
             infinite: true,
@@ -195,7 +194,20 @@ $(function(){
             fade: true,
             cssEase: 'linear'
         });
-
+        // **************************************
+        $('.sec_10_menu li').click(function(){
+            $('.sec_10_menu li').removeClass('on');
+            $(this).addClass('on');
+        });
+        $('.sec_10_left li').click(function(){
+            let num = $(this).index();
+            console.log("메뉴번호="+num);
+            $('.sec_10_color li').hide().eq(num).fadeIn(1500);
+        });
+        $('.sec_10_right li').click(function(){
+            let num = $(this).index();
+            $('.sec_10_color li').hide().eq(num+6).fadeIn(1500);
+        });
 
 
 

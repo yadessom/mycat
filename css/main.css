@@ -688,6 +688,9 @@ body{font-family: 'Open Sans', sans-serif;}
 .sec_10{
     width: 100%;
     background:url("../images/con_10_bg.jpg");
+    position: relative;
+    
+    /* overflow: hidden; */
 }
 .sec_10_inner{
     width: 1000px;
@@ -697,6 +700,11 @@ body{font-family: 'Open Sans', sans-serif;}
 }
 .sec_10_tit{
     padding-top: 140px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 99;
 }
 .sec_10_tit h2{
     color: #625f5d;
@@ -704,6 +712,61 @@ body{font-family: 'Open Sans', sans-serif;}
     font-weight: bold;
     letter-spacing: normal;
     margin-bottom:30px;
+}
+/* ********************************************* */
+.sec_10_menu{
+    position: absolute;
+}
+.sec_10_left{
+    right: 50%;
+    bottom: 240px;
+    margin-right: 257px;
+}
+.sec_10_right{
+    left: 50%;
+    bottom: 345px;
+    margin-left: 257px;
+}
+.sec_10_right a{
+    display: flex;
+    align-items: center;
+}
+.sec_10_menu li{
+    width: 170px;
+}
+.sec_10_left a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sec_10_menu span{
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+    line-height: 75px;
+}
+.sec_10_menu li.on span{
+    color: #fff;
+}
+.sec_10_menu img{
+    margin-top: 10px;
+}
+/* ********************************************* */
+.sec_11_display{
+    display: none;
+}
+.sec_10_color{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.sec_10_case{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 /* ********************************************* */
 .sec_11{
