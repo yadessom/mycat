@@ -547,13 +547,13 @@ body{font-family: 'Open Sans', sans-serif;}
     margin: 0 auto;
     text-align: center;
     position: relative;
-    background:url("../images/cat_case_hanger_design_01.jpg") no-repeat center;
 }
 .sec_08_tit{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     padding-top: 140px;
+    z-index: 99;
 }
 .sec_08_tit h2{
     font-size: 32px;
@@ -566,6 +566,33 @@ body{font-family: 'Open Sans', sans-serif;}
     color: #fff;
     line-height: 24px;
     margin:10px 0 30px 0;
+}
+/* ********************************************* */
+.sec_08_fade{
+    width: 1600px;
+    margin: 0 auto; 
+}
+.sec_08_fade button{
+    width: 42px;
+    height: 77px;
+    border: none;
+    text-indent: -99999px;
+    cursor: pointer;
+    z-index: 90;
+}
+.sec_08 .slick-prev{
+    position: absolute;
+    left: 205px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../images/con_05_slide_left.png")no-repeat;
+}
+.sec_08 .slick-next{
+    position: absolute;
+    right: 205px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../images/con_05_slide_right.png")no-repeat;
 }
 /* ********************************************* */
 .sec_09{

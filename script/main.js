@@ -186,6 +186,15 @@ $(function(){
             $('.sec_12').removeClass('on');
         }
 
+        // slick fade *****************************************
+        
+        $('.sec_08_fade').slick({
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
 
 
 
